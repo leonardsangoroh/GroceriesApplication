@@ -10,6 +10,9 @@ import UIKit
 extension UIView {
     ///bring sub-views to the edge of the main view
     func pinToEdges(of view: UIView, with constant: CGFloat = 0) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false;
+        
         NSLayoutConstraint.activate([
             self.topAnchor.constraint(equalTo: view.topAnchor, constant: constant),
             self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -constant),
