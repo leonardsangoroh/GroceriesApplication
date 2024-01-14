@@ -16,6 +16,8 @@
 		B5E11B592B52A8330053236E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B542B52A8330053236E /* Color+Extension.swift */; };
 		B5E11B5A2B52A8330053236E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B552B52A8330053236E /* Images.swift */; };
 		B5E11B5B2B52A8330053236E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B572B52A8330053236E /* Router.swift */; };
+		B5E11B5D2B545DC50053236E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5C2B545DC50053236E /* WelcomeView.swift */; };
+		B5E11B5F2B545ECE0053236E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B5E11B542B52A8330053236E /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B5E11B552B52A8330053236E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		B5E11B572B52A8330053236E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B5E11B5C2B545DC50053236E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E11B512B52A77E0053236E /* Controllers */,
+				B5E11B5C2B545DC50053236E /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E11B3E2B528ED60053236E /* WelcomeViewController.swift */,
+				B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 			files = (
 				B5E11B3F2B528ED60053236E /* WelcomeViewController.swift in Sources */,
 				B5E11B5A2B52A8330053236E /* Images.swift in Sources */,
+				B5E11B5F2B545ECE0053236E /* CategoriesViewController.swift in Sources */,
 				B5E11B592B52A8330053236E /* Color+Extension.swift in Sources */,
+				B5E11B5D2B545DC50053236E /* WelcomeView.swift in Sources */,
 				B5E11B5B2B52A8330053236E /* Router.swift in Sources */,
 				B5E11B3B2B528ED60053236E /* AppDelegate.swift in Sources */,
 				B5E11B582B52A8330053236E /* UIView+Extension.swift in Sources */,
