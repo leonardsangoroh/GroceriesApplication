@@ -42,8 +42,17 @@ class WelcomeViewController: UIViewController {
 
 
 class WelcomeView: UIView {
+    
+    private lazy var backgroundImage: UIImageView = {
+        let imageView = UIImageView(image: Images.Welcome.background)
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupView()
         style()
         layout()
     }
@@ -59,13 +68,14 @@ class WelcomeView: UIView {
 
 extension WelcomeView {
     private func setupView(){
-        
+        addSubViews(backgroundImage)
     }
     
     private func style(){
         backgroundColor = .blue
     }
     private func layout() {
-        
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundImage.pinToEdges(of: self)
     }
 }
