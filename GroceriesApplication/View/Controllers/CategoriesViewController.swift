@@ -8,6 +8,8 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
+    private let categoriesView = CategoriesView()
+    
     ///declare property named 'router' of type 'Router'
     var router: Router
     ///initializer for the class. Takes the instance of the 'Router' as a parameter and assigns it to the 'router' property
@@ -23,9 +25,22 @@ class CategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        view.backgroundColor = .red
+        setupNavigationController()
+        setup()
+        layout()
     }
-
+    
+    private func setup(){
+        view.addSubview(categoriesView)
+    }
+    
+    private func layout(){
+        categoriesView.pinToEdges(of: view)
+    }
+    
+    private func setupNavigationController() {
+        title = "Find Products"
+        navigationItem.setHidesBackButton(true, animated: false)
+    }
 }

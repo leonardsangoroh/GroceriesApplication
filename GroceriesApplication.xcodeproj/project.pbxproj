@@ -18,6 +18,7 @@
 		B5E11B5B2B52A8330053236E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B572B52A8330053236E /* Router.swift */; };
 		B5E11B5D2B545DC50053236E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5C2B545DC50053236E /* WelcomeView.swift */; };
 		B5E11B5F2B545ECE0053236E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */; };
+		B5E11B612B546E090053236E /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B602B546E090053236E /* CategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B5E11B572B52A8330053236E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B5E11B5C2B545DC50053236E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		B5E11B602B546E090053236E /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				B5E11B512B52A77E0053236E /* Controllers */,
 				B5E11B5C2B545DC50053236E /* WelcomeView.swift */,
+				B5E11B602B546E090053236E /* CategoriesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				B5E11B5B2B52A8330053236E /* Router.swift in Sources */,
 				B5E11B3B2B528ED60053236E /* AppDelegate.swift in Sources */,
 				B5E11B582B52A8330053236E /* UIView+Extension.swift in Sources */,
+				B5E11B612B546E090053236E /* CategoriesView.swift in Sources */,
 				B5E11B3D2B528ED60053236E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
