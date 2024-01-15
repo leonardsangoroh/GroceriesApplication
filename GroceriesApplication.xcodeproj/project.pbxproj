@@ -19,6 +19,7 @@
 		B5E11B5D2B545DC50053236E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5C2B545DC50053236E /* WelcomeView.swift */; };
 		B5E11B5F2B545ECE0053236E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */; };
 		B5E11B612B546E090053236E /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B602B546E090053236E /* CategoriesView.swift */; };
+		B5E11B632B555A6D0053236E /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E11B622B555A6D0053236E /* CategoriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B5E11B5C2B545DC50053236E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B5E11B5E2B545ECE0053236E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		B5E11B602B546E090053236E /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		B5E11B622B555A6D0053236E /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		B5E11B502B52A7730053236E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B5E11B622B555A6D0053236E /* CategoriesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				B5E11B582B52A8330053236E /* UIView+Extension.swift in Sources */,
 				B5E11B612B546E090053236E /* CategoriesView.swift in Sources */,
 				B5E11B3D2B528ED60053236E /* SceneDelegate.swift in Sources */,
+				B5E11B632B555A6D0053236E /* CategoriesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

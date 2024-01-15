@@ -8,7 +8,9 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
+    
     private let categoriesView = CategoriesView()
+    private let viewModel = CategoriesViewModel()
     
     ///declare property named 'router' of type 'Router'
     var router: Router
@@ -49,20 +51,42 @@ class CategoriesViewController: UIViewController {
 
 extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return viewModel.categoriesLists.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCardCell", for: indexPath) as? CategoryCardCell else {return UICollectionViewCell() }
         
+        let item = viewModel.categoriesLists[indexPath.row]
+        cell.model = item
+        
         return cell
+    }
+    
+    ///set size of each item in the collection
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 160, height: 180)
     }
     
     
 }
 
+///model that will receive the data and pass it to the CategoriesView
+struct CategoryCardModel {
+    let title: String
+    let image: UIImage
+    let color: UIColor
+    let borderColor: UIColor
+}
+
 class CategoryCardCell: UICollectionViewCell {
+    
+    var model: CategoryCardModel? {
+        didSet{
+            bind()
+        }
+    }
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
@@ -120,5 +144,13 @@ extension CategoryCardCell {
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
+    }
+    
+    func bind(){
+        guard let model = model else {return}
+        imageView.image = model.image
+        titleLabel.text = model.title
+        backgroundColor = model.color
+        layer.borderColor = model.borderColor.cgColor
     }
 }
